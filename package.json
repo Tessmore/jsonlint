@@ -22,7 +22,7 @@
     "jsonlint": "lib/cli.js"
   },
   "engines": {
-    "node": ">= 0.6"
+    "node": ">= 8.9"
   },
   "dependencies": {
     "nomnom": "^1.5.x",
@@ -31,10 +31,14 @@
   "devDependencies": {
     "test": "*",
     "jison": "*",
-    "uglify-js": "*"
+    "uglify-js": "*",
+    "browserify": "16.2.2"
   },
   "scripts": {
-    "test": "node test/all-tests.js"
+    "test": "node test/all-tests.js",
+    "browser": "browserify lib/jsonlint.js --standalone jsonlint | uglifyjs -c > docs/jsonlint.min.js",
+    "build:lib": "node ./node_modules/jison/lib/cli.js src/jsonlint.y src/jsonlint.l -o lib/jsonlint.js",
+    "build": "yarn run build:lib && yarn run browser"
   },
   "homepage": "http://zaach.github.com/jsonlint/",
   "optionalDependencies": {}

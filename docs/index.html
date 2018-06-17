@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>JSON Lint</title>
+
+    <link href="favicon.ico" rel="shortcut icon">
+    <link href="main.css" rel="stylesheet">
+
+    <script src="json2.js"></script>
+    <script src="jsonlint.min.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+  <div id="filedrop">
+    <div class="content">
+        <div class="left half">
+            <h2>
+              JSON Lint
+              <small>Paste the JSON here, or drop a file on this page.</small>
+            </h2>
+
+            <textarea id="source" rows="32" autofocus></textarea>
+
+            <p>
+              <button id="button" class="right">
+                Validate
+              </button>
+
+              <!-- <div class="left">
+                  <input type="checkbox" value="yes" id="reformat" />
+                  <label for="reformat">reformat JSON</label>
+              </div> -->
+            </p>
+        </div>
+
+        <div class="left half">
+            <h2>Results</h2>
+            <pre id="result"></pre>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

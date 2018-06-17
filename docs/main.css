@@ -1,0 +1,118 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height:100%;
+}
+
+body {
+    font-size: 16px;
+    font-family: monospace;
+    line-height: 145%;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, a, code, span, em, small, strong, b, i, ol, ul, li, label {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:focus, button:focus {
+    outline: none;
+}
+
+a img {
+    border: 0;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+h2 small {
+    font-size: 80%;
+    color: #999;
+}
+
+button {
+    padding: 4px 7px;
+    cursor:pointer;
+}
+
+
+#filedrop {
+    width: 100%;
+    height:100%;
+    float:left;
+    display: block;
+
+    border: 1px solid #fff;
+    background: #fff;
+}
+
+#filedrop.hover {
+    border: 1px dashed #ccc;
+    background: #eafbff;
+}
+
+.content {
+    display: block;
+    width: 100%;
+    padding: 16px 64px;
+}
+
+.left {
+    float:left;
+}
+
+.right {
+    float: right;
+}
+
+textarea {
+    font-size: 14px;
+    font-family: monospace;
+
+    width: 100%;
+    padding: 6px;
+
+    resize: vertical;
+    border: 1px solid #ccc;
+}
+
+.half {
+    min-width: 500px;
+    width: 45%;
+    margin-right: 64px;
+}
+
+#result {
+    padding: 6px;
+}
+
+.pass {
+    background-color: #efe;
+    color: #393;
+    border: 2px solid #393;
+}
+
+.fail {
+    background-color: #fee;
+    color: #933;
+    border: 2px solid #933;
+}
