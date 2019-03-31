@@ -32,7 +32,7 @@
     "test": "*",
     "jison": "*",
     "uglify-js": "*",
-    "browserify": "16.2.2"
+    "browserify": "16.2.3"
   },
   "scripts": {
     "test": "node test/all-tests.js",
